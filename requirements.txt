@@ -1,6 +1,6 @@
 pyttsx3
 speechrecognition
-google
+google.generativeai
 python-dotenv
 flask
 flask-core
