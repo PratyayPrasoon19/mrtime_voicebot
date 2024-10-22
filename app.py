@@ -1,35 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 import google.generativeai as genai
 import os
-import pyttsx3
 from dotenv import load_dotenv
-import speech_recognition as sr
 load_dotenv()
-engine = pyttsx3.init()
 app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('index.html')
-def voice_to_text():
-    # Initialize the recognizer
-    recognizer = sr.Recognizer()
-    # Use the microphone as the audio source
-    with sr.Microphone() as source:
-        print("Adjusting for ambient noise... Please wait.")
-        recognizer.adjust_for_ambient_noise(source, duration=1)
-        print("Listening for user query... Please Speak.")
-        # Capture the audio from the microphone
-        audio = recognizer.listen(source, timeout=5, phrase_time_limit=5)
-        try:
-            # Recognize the speech using Google's free service
-            print("Processing speech...")
-            text = recognizer.recognize_google(audio)
-            print(f"User said: {text}")
-        except sr.UnknownValueError:
-            text = ("Sorry, I could not understand the audio.")
-        except sr.RequestError:
-            text = ("Could not request results from the service. Check your internet connection.")
-    return text
 
 prompt = """You are an AI Voice Bot, trained on multiple prospects and have to give a proper reply to the user based on user_query.
             You have to consider chat_history before generating result.
