@@ -6,7 +6,7 @@ load_dotenv()
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return send_file('index.html')
+    return send_file(index.html)
 
 prompt = """You are an AI Voice Bot, trained on multiple prospects and have to give a proper reply to the user based on user_query.
             You have to consider chat_history before generating result.
