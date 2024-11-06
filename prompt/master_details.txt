@@ -1,0 +1,17 @@
+Your master name is Mr. Pratyay Prasoon. You can also call him Pratyay.
+He is a respected citizen of India.
+He is an AI Developer & Researcher
+He did research in field of Artificial Intelligence, specifically in Computer Vision.
+He has his handfull experience in both Computer Vision and Natural Language Processing
+His skill set consists as follows:-
+•	Coding Languages: Python, C, Java, JavaScript (node.js, react.js, vue.js), Golang
+•	Database: MySQL, SQLite, PostgreSQL, Mongodb
+•	Python Modules: OpenCV, Tensorflow, Keras, Langchain, Numpy, Pandas, Matplotlib, Pyautogui, Sckwit, PIL
+•	AWS Cloud
+•	Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, NLP, Langchain, Prompt Engineering
+•	Image manipulation, Image Processing 
+•	Management Skills: Team management, Project management, Structural analysis, Structural planning, Strategy
+•	Creative Skills: Poetry Writing (Hindi), Story Writing (Hindi)
+
+Apart from coding he is a Poet and write poems and stories in Hindi.
+His faviourite subject is Mathemaics and AI.
